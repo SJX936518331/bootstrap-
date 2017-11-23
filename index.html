@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+      <style type="text/css">
+    /*  .search{border: solid 2px black;}
+      .touming{border: solid 2px blue;}
+      .container{border: solid 2px yellow;}*/
+      body{font-family: "微软雅黑"}
+      .navbar{margin-bottom: 0}
+      .navbar-default {
+        background-color: #f8f8f8;
+        border-color: #e7e7e7;
+        min-height: 80px;
+      }
+      .head-top{height: 1.2em;background: pink}
+      .navbar-default .navbar-nav{font-size: 1.1em;margin-top: 22px}
+      .navbar-default .navbar-nav > li > a {
+        color: #666;padding: 5px 30px;border-radius: 3px;
+      }
+      .navbar-default .navbar-nav > li > a:hover,
+      .navbar-default .navbar-nav > li > a:focus {
+        color: #fff;
+        background-color: pink;
+      }
+      .navbar-right{color: red;font-size: 1.6em;margin-top: 20px}
+      .navbar-header{min-height: 80px;}
+
+
+       body,input,select,button{font-family: "微软雅黑"}
+      .search{min-height: 430px;background: url(images/banner.jpg);background-size: cover;}
+      .touming{background: rgba(255,255,255,0.7);width: 50%;
+        margin: 0 auto;padding: 60px;margin-top: 60px;
+      }
+      .btn{width:60%;background: pink;border-color: pink;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+      @media all and (max-width: 768px){
+        .touming{width: 100%}
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 页头开始  -->
+        <header>
+      <div class="head-top"></div>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container"><!-- 布局容器 -->
+          <div class="navbar-header"><!-- 导航头部 -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+          </div><!-- 导航结束 -->
+          <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">主页</a></li>
+              <li><a href="#">餐厅</a></li>
+              <li><a href="#">健康</a></li>
+              <li><a href="#">话题</a></li>
+              <li><a href="#">联系我们</a></li>
+            </ul>
+            <div class="navbar-right">
+              <span>￥0.00 <img src="images/bag.png" alt="购物车"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+  <!-- 页头结束  -->
+
+
+  <!-- 搜索 开始 -->
+ <div class="search">
+      <div class="container">
+        <div class="touming">
+          <form role="form" class="form-horizontal">
+            <div class="form-group">
+              <label class="sr-only">名称</label>
+              <input type="text" name="name" class="form-control input-lg" placeholder="请输入餐厅的名称">
+            </div>
+            <div class="form-group">
+              <label class="sr-only">地址</label>
+              <select name="address" class="form-control input-lg">
+                <option>请选择您所在的城市</option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>广州</option>
+              </select>
+            </div>
+            <div class="form-group" style="text-align: center;">
+              <button type="submit" class="btn btn-success btn-lg"><img src="images/search-icon.png"> 搜索</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <!-- 搜索 结束 -->
+    <!-- 热卖 开始 -->
+ <div class="hotsale">
+      <div class="container">
+        <div class="row"><!-- 行开始 -->
+          <div class="col-sm-4">
+            <h2>米西奈斯煎饼</h2>
+            <img src="images/4.jpg" class="img-responsive" alt="米西奈斯煎饼">
+            <p class="glyphicon glyphicon-thumbs-up">两种口味可以选择</p>
+            <p class="bag"><a href="#">添加到购物车</a></p>
+            <p class="price">一口价：￥999.00</p>
+          </div>
+          <div class="col-sm-4">
+            <h2>米西奈斯煎饼</h2>
+            <img src="images/4.jpg" class="img-responsive" alt="米西奈斯煎饼">
+            <p class="glyphicon glyphicon-thumbs-up">两种口味可以选择</p>
+            <p class="bag"><a href="#">添加到购物车</a></p>
+            <p class="price">一口价：￥999.00</p>
+          </div>          
+          <div class="col-sm-4">
+            <h2>米西奈斯煎饼</h2>
+            <img src="images/4.jpg" class="img-responsive" alt="米西奈斯煎饼">
+            <p class="glyphicon glyphicon-thumbs-up">两种口味可以选择</p>
+            <p class="bag"><a href="#">添加到购物车</a></p>
+            <p class="price">一口价：￥999.00</p>
+          </div>
+        </div><!-- 行结束 -->
+      </div>
+    </div>
+
+
+
+
+     <!-- 热卖 结束 -->
+ <!-- recommand 开始 -->
+ <div class="recommend">
+      <div class="container">
+        <div class="nav">
+          <ul id="myTab" class="nav nav-pills navbar-right"><!-- 选项 -->
+            <li class="active"><a href="#tab1" data-toggle="tab">菜品</a></li>
+            <li><a href="#tab2" data-toggle="tab">饮料</a></li>
+            <li><a href="#tab3" data-toggle="tab">主食</a></li>
+          </ul>
+          <img src="images/title.jpg" alt="根据您的喜欢推荐">
+        </div>
+        <div id="myTabContent" class="tab-content"><!-- 选项卡内容 -->
+          <div class="tab-pane fade in active" id="tab1">
+            <ul class="row">
+              <li class="col-md-2 col-sm-4 col-xs-6">
+                <img src="images/products/small01.jpg" alt="菜品">
+                <p>菜品</p>
+                <p>￥999.00</p>
+              </li>              
+              <li class="col-md-2 col-sm-4 col-xs-6">
+                <img src="images/products/small02.jpg" alt="菜品">
+                <p>菜品</p>
+                <p>￥999.00</p>
+              </li>              
+              <li class="col-md-2 col-sm-4 col-xs-6">
+                <img src="images/products/small03.jpg" alt="菜品">
+                <p>菜品</p>
+                <p>￥999.00</p>
+              </li>              
+              <li class="col-md-2 col-sm-4 col-xs-6">
+                <img src="images/products/small04.jpg" alt="菜品">
+                <p>菜品</p>
+                <p>￥999.00</p>
+              </li>              
+              <li class="col-md-2 col-sm-4 col-xs-6">
+                <img src="images/products/small05.jpg" alt="菜品">
+                <p>菜品</p>
+                <p>￥999.00</p>
+              </li>              
+              <li class="col-md-2 col-sm-4 col-xs-6">
+                <img src="images/products/small06.jpg" alt="菜品">
+                <p>菜品</p>
+                <p>￥999.00</p>
+              </li>
+            </ul>
+          </div>      
+          <div class="tab-pane fade" id="tab2">
+            <p>选项卡二的内容</p>
+          </div>      
+          <div class="tab-pane fade" id="tab3">
+            <p>选项卡三的内容</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <!-- recommand 结束 -->
+<!-- 轮播部分 -->
+ <div class="lunbo">
+       <div class="container">
+         <div id="myCarousel" class="carousel slide">
+  <!-- 轮播（Carousel）指标 -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>   
+  <!-- 轮播（Carousel）项目 -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="pic">
+        <img src="images/p1.jpg">
+        <img src="images/p2.jpg">
+        <img src="images/p7.jpg">
+        <img src="images/p4.jpg">
+        <img src="images/p5.jpg">
+        <img src="images/p6.jpg">
+      </div>
+    </div>
+    <div class="item">
+     <div class="pic">
+        <img src="images/p1.jpg" >
+        <img src="images/p2.jpg" >
+        <img src="images/p7.jpg" >
+        <img src="images/p4.jpg" >
+        <img src="images/p5.jpg" >
+        <img src="images/p6.jpg" >
+      </div>
+    </div>
+      <div class="item">
+     <div class="pic">
+        <img src="images/p1.jpg" >
+        <img src="images/p2.jpg" >
+        <img src="images/p7.jpg" >
+        <img src="images/p4.jpg" >
+        <img src="images/p5.jpg" >
+        <img src="images/p6.jpg" >
+      </div>
+    </div>
+  </div>
+  <!-- 轮播（Carousel）导航 -->
+  <a class="carousel-control left" href="#myCarousel" 
+     data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" 
+     data-slide="next">&rsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" 
+     data-slide="next">&rsaquo;</a>
+</div> 
+       </div>
+    </div>
+
+<!-- 轮播部分结束 -->
+<!-- 页脚部分开始 -->
+ <footer>
+      <div class="container">
+         <div><p><a href="#">联系我们</a>&nbsp;&nbsp;<a href="#">公司地址</a>&nbsp;&nbsp;<a href="#">服务声明</a></p></div>
+          <p>
+©2017 Baidu 使用百度前必读 意见反馈 京ICP证030173号  京公网安备11000002000001号</p>
+
+      </div>
+    </footer>
+    <!-- 页脚部分结束 -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
